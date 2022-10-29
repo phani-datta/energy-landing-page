@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 0px 20px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    padding: 10px 0px
+}
+
+.nav-logo *{
+    cursor: pointer;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: baseline;
+    width: fit-content;
+    margin-top: -10px;
+}
+
+.nav-items{
+    display: none;
+}
+
+.menu-icon{
+    color: #333333;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 1140px) {
+    /* Desktop view */
+    .container{
+        max-width: 87rem;
+        margin: 0px;
+    }
+
+    .nav-items{
+        display: flex;
+        padding: 0px;
+    }
+
+    .nav-items li{
+        list-style: none;
+        padding: 0px 15px;
+        cursor: pointer;
+    }
+
+    .nav-items li:hover:after{
+        cursor: pointer;
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50%; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #0068ba; /* This creates the border. Replace black with whatever color you want. */
+        margin-bottom: -12px;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+}
+
+.nav-logo h3{
+    font-family: 'Lobster Two', cursive;
+    font-size: 39px;
+    margin: 0px;
+    color: #333333;
+    margin-left: 5px;
+}
+
+.logo{
+    color: #0068ba;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+.nav-buttons *{
+    cursor: pointer;
+    color: #0068ba;
+    margin: 0px 7px;
+}
+
+.nav-buttons a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-buttons button{
+    padding: 17px 40px;
+    background-color: transparent;
+    border: 1px solid #0068ba;
+    color: #0068ba;
+}
+
+.nav-buttons button:hover{
+    background-color: #0068ba;
+    color: white;
+    transition: 200ms;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 87rem;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hero-content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin: 20px 0px;
+}
+
+.hero-content p{
+    font-weight: 500;
+}
+
+.hero-content div{
+    display: flex;
+    width: 150px;
+    margin-left: -10px;
+}
+
+.about{
+    position: relative;
+    max-width: 87rem;
+    margin: auto;
+    margin-top: 80px;
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.vertical-text{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 60px;
+    color: #e5e5e5;
+    margin: 0px;
+}
+
+.about-content-1{
+    position: absolute;
+    background-color: #0060b8;
+    color: white;
+    width: fit-content;
+    text-align: center;
+    top: 0;
+}
+
+.about-content-1 h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    padding: 35px 90px;
+    margin: 0px;
+}
+
+.about-content-2{
+    position: absolute;
+    background-color: #edf2f5;
+    max-width: 450px;
+    padding: 30px 40px;
+    bottom: 0;
+    right: 100px;
+    margin-top: 100px;
+}
+
+.about-content-2 h1{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.about-content-2 i{
+    float: right;
+}
+
+.content-p{
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.read-more{
+    display: flex;
+    align-items: center;
+    width: 28%;
+    color: #0060b8;
+    font-weight: 900;
+}
+
+.read-more div{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #0060b8;
+    margin-left: 10px;
+}
+
