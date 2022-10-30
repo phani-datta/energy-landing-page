@@ -51,7 +51,7 @@ nav{
     /* Desktop view */
     .container{
         max-width: 87rem;
-        margin: 0px;
+        margin: auto;
     }
 
     .nav-items{
@@ -76,7 +76,7 @@ nav{
         margin-bottom: -12px;
     }
 
-    .menu-icon{
+    i.menu-icon{
         display: none;
     }
 }
