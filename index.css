@@ -97,6 +97,7 @@ nav{
     overflow: hidden;
     background: url(/assets/images/hero.png) no-repeat center;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 .badge img{
@@ -131,60 +132,60 @@ nav{
     margin-left: -10px;
 }
 
+.vertical-title{
+    display: none;
+}
+
+.horizontal-title{
+    font-size: 60px;
+    color: #e5e5e5;
+    padding-bottom: 50px;
+}
+
 .about{
     position: relative;
+    padding: 0px 20px;
     max-width: 87rem;
     margin: auto;
-    margin-top: 80px;
-    height: 810px;
-    display: flex;
-    flex-direction: column;
+    height: 630px;
 }
 
 .about-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 5rem;
-}
-
-.vertical-text{
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 60px;
-    color: #e5e5e5;
-    margin: 0px;
+    position: relative;
+    background: url(/assets/images/about.png) no-repeat center;
+    height: 360px;
 }
 
 .about-content-1{
     position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
     background-color: #0060b8;
     color: white;
-    width: fit-content;
-    text-align: center;
-    top: 0;
+    width: 213px;
+    padding: 10px 30px;
 }
 
-.about-content-1 h1{
-    font-family: 'Poppins', sans-serif;
+.about-content-1 h3{
     font-weight: 100;
-    padding: 35px 90px;
-    margin: 0px;
 }
 
 .about-content-2{
     position: absolute;
     background-color: #edf2f5;
-    max-width: 450px;
-    padding: 30px 40px;
+    width: 255px;
+    padding: 20px 30px;
     bottom: 0;
-    right: 100px;
-    margin-top: 100px;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .about-content-2 h1{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin-top: 30px;
 }
@@ -203,7 +204,7 @@ nav{
 .read-more{
     display: flex;
     align-items: center;
-    width: 28%;
+    width: 120px;
     color: #0060b8;
     font-weight: 900;
 }
@@ -217,6 +218,17 @@ nav{
 
 i.chat-icon{
     display: none;
+}
+
+.about-title{
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-title h2{
+    margin: 0;
 }
 
 @media only screen and (min-width: 1140px) {
@@ -255,6 +267,8 @@ i.chat-icon{
     .nav-buttons a{
         display: inline;
     }
+
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -265,5 +279,111 @@ i.chat-icon{
     i.chat-icon{
         display: flex;
     }
+
+    p.limit-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
 }
+
+@media only screen and (min-width: 500px) {
+    .about-content-1{
+        margin-left: 20px;
+        padding: 35px 90px;
+        max-width: 400px;
+    }
+
+    .about-content-1 h3{
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 100;
+    }
+
+    .about-content-2{
+        margin-right: 130px;
+    }
+
+    .about-content{
+        background-position: right;
+        width: 100%;
+        height: 400px;
+    }
+
+    p.limit-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .vertical-title{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .about-content-1{
+        width: 400px;
+        padding: 20px 90px;
+    }
+
+    .about-content-1 h3{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+    }
+
+    .about{
+        height: 990px;
+    }
+
+    .about-content{
+        height: 70%;
+    }
+
+    .about-content-2{
+        width: 450px;
+        padding: 30px 40px;
+        margin-bottom: 50px;
+    }
+
+    p.limit-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+
+    .about-content-2 h1{
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1349px) {
+    h3.vertical-title{
+        display: block;
+        position: absolute;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        font-size: 60px;
+        color: #e5e5e5;
+        margin: 0px;
+        top: 45%;
+    }
+
+    h2.horizontal-title{
+        display: none;
+    }
+
+    .hero{
+        margin-bottom: 0px;
+    }
+}
+
 
