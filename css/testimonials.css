@@ -1,0 +1,169 @@
+.testimonials{
+    background-color: #edf2f5;
+}
+
+.hidden {
+    display: none;
+}
+
+.testimonials-heading{
+    background-color: #0068bb;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-heading h3{
+    font-size: 50px;
+    color: #0078c3;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.quote{
+    background-color: #0068bb;
+    color: white;
+    width: fit-content;
+    margin: 20px auto 20px auto;
+
+}
+
+.quote i{
+    font-size: 52px;
+    padding: 20px 20px;
+}
+
+.track-testimonials > input{
+    cursor: pointer;
+}
+
+.track-testimonials{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin: auto;
+    width: 100px;
+}
+
+
+#testimonial{
+    text-align: center;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#userName{
+    color: #0068bb;
+}
+
+.testimonials .read-more{
+    padding: 0px 20px;
+    width: 200px;
+}
+
+.testimonials .read-more p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.testim-hr{
+    width: 70px;
+}
+
+.testim-hr hr{
+    border: 1px solid #0068bb;
+}
+
+table{
+    padding: 0px 20px;
+}
+
+table p{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+}
+
+.desktop-title{
+    display: none;
+}
+
+.desktop-body h2{
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    div.testimonials-heading{
+        display: none;
+    }
+
+    .testimonials{
+        display: flex;
+    }
+
+    .desktop-title{
+        background-color: #0068bb;
+    }
+
+    .desktop-title{
+        display: block;
+    }
+
+    .testimonials h3{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        font-size: 60px;
+        color: #0078c3;
+        margin: 0px;
+        padding-right: 100px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+
+    div.quote{
+        margin: 0px;
+        height: 90px;
+    }
+
+    .testimonial-body{
+        padding: 80px;
+        display: flex;
+        position: relative;
+    }
+
+    #testimonial{
+        text-align: start;
+    }
+
+    .track-testimonials{
+        float: right;
+    }
+
+    div.desktop-body{
+        margin-left: 50px;
+    }
+
+    .desktop-body h2{
+        display: block;
+        margin-left: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #0068bb;
+        padding-top: 23px;
+        padding-bottom: 50px;
+    }
+
+    .track-testimonials{
+        position: absolute;
+        top: 150px;
+        right: 160px;
+    }
+
+    .testimonials table{
+        margin-top: 50px;
+    }
+}

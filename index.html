@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="services.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/css/services.css">
+        <link rel="stylesheet" href="/css/testimonials.css">
 
         <!-- Fontawesome icons kit's code -->
         <script src="https://kit.fontawesome.com/fca554cd08.js" crossorigin="anonymous"></script>
@@ -17,6 +18,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
 
+        <script type="text/javascript" src="/js/testimonials.js"></script>
     </head>
     <body>
 
@@ -81,6 +83,7 @@
             </div>
         </div>
 
+        <!-- Services -->
         <h3 class="services-heading-horizontal">Services</h3>
         <section class="services">
             <div class="services-heading" style="align-content: flex-start;">
@@ -140,6 +143,42 @@
             </div>
         </section>
 
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="desktop-title">
+                <h3>Testimonial</h3>
+            </div>
+            <div class="testimonial-body">
+                <div class="testimonials-heading">
+                    <h3>Testimonials</h3>
+                </div>
+                <div class="quote">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <div class="desktop-body">
+                    <h2>Testimonials</h2>
+                    <div class="track-testimonials">
+                        <input type="radio" name="track-btn" value="1" checked onclick="testimonials(event)">
+                        <input type="radio" name="track-btn" value="2" onclick="testimonials(event)">
+                        <input type="radio" name="track-btn" value="3" onclick="testimonials(event)">
+                    </div>
+                    <p id="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit veritatis minima porro, ipsum cum explicabo magni dignissimos rem et quam officiis obcaecati amet similique, ducimus enim quibusdam. Veniam, distinctio.</p>
+                    <table>
+                        <tr>
+                            <td class="testim-hr"><hr /></td>
+                            <td><p id="userName">Jessica Priston</p></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><p id="userDetails">Engineer, Rosewood, UK</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
         <footer class="footer">
             <div class="container-1">
                 <div class="row">
