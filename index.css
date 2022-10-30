@@ -13,7 +13,7 @@ h1{
 }
 
 .container{
-    margin: 0px 20px;
+    margin: 0px 4px 0px 20px;
 }
 
 .nav-container{
@@ -47,40 +47,6 @@ nav{
     margin-right: 20px;
 }
 
-@media only screen and (min-width: 1140px) {
-    /* Desktop view */
-    .container{
-        max-width: 87rem;
-        margin: auto;
-    }
-
-    .nav-items{
-        display: flex;
-        padding: 0px;
-    }
-
-    .nav-items li{
-        list-style: none;
-        padding: 0px 15px;
-        cursor: pointer;
-    }
-
-    .nav-items li:hover:after{
-        cursor: pointer;
-        content: ""; /* This is necessary for the pseudo element to work. */
-        display: block; /* This will put the pseudo element on its own line. */
-        margin: 0 auto; /* This will center the border. */
-        width: 50%; /* Change this to whatever width you want. */
-        padding-top: 10px; /* This creates some space between the element and the border. */
-        border-bottom: 2px solid #0068ba; /* This creates the border. Replace black with whatever color you want. */
-        margin-bottom: -12px;
-    }
-
-    i.menu-icon{
-        display: none;
-    }
-}
-
 .nav-logo h3{
     font-family: 'Lobster Two', cursive;
     font-size: 39px;
@@ -94,13 +60,11 @@ nav{
     font-size: 30px;
 }
 
-
-
-
-
-
-
-
+.nav-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .nav-buttons *{
     cursor: pointer;
@@ -109,6 +73,7 @@ nav{
 }
 
 .nav-buttons a{
+    display: none;
     text-decoration: none;
     font-weight: 600;
 }
@@ -243,5 +208,57 @@ nav{
     height: 1px;
     background-color: #0060b8;
     margin-left: 10px;
+}
+
+i.chat-icon{
+    display: none;
+}
+
+@media only screen and (min-width: 1140px) {
+    /* Desktop view */
+    .container{
+        max-width: 87rem;
+        margin: auto;
+    }
+
+    .nav-items{
+        display: flex;
+        padding: 0px;
+    }
+
+    .nav-items li{
+        list-style: none;
+        padding: 0px 15px;
+        cursor: pointer;
+    }
+
+    .nav-items li:hover:after{
+        cursor: pointer;
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50%; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #0068ba; /* This creates the border. Replace black with whatever color you want. */
+        margin-bottom: -12px;
+    }
+
+    i.menu-icon{
+        display: none;
+    }
+
+    .nav-buttons a{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-buttons button{
+        display: none;
+    }
+
+    i.chat-icon{
+        display: flex;
+    }
 }
 
