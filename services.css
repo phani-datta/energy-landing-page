@@ -1,0 +1,113 @@
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-heading{
+    margin-bottom: 50px;
+}
+
+.services{
+    display: block;
+    padding: 20px 20px;
+    max-width: 87rem;
+    margin: auto;
+}
+
+.services h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.blue-text{
+    color: #0068bb;
+}
+
+.services > div{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.service-content-card{
+    position: absolute;
+    background-color: white;
+    width: 255px;
+    padding: 0px 40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.service-div{
+    position: relative;
+    height: 310px;
+    margin-bottom: 60px;
+}
+
+.service-div img{
+    width: 100%;
+}
+
+.service-content-card h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.services-heading h3.vertical{
+    display: none;
+}
+
+h3.services-heading-horizontal{
+    font-size: 60px;
+    color: #e5e5e5;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+}
+
+div.services-heading{
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .service-content-card{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    .service-div{
+        height: 390px;
+    }
+}
+
+
+@media only screen and (min-width: 1349px) {
+    .services-heading h3.vertical{
+        display: block;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            font-size: 60px;
+            color: #e5e5e5;
+            margin: 0px;
+            top: 45%;
+    }
+
+    h3.services-heading-horizontal{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1068px) {
+    .services{
+        display: flex;
+        max-width: 87rem;
+        margin: auto;
+        justify-content: space-between;
+    }
+}
