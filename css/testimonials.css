@@ -91,6 +91,10 @@ table p{
     display: none;
 }
 
+.desktop-body{
+    height: 300px;
+}
+
 .desktop-body h2{
     display: none;
 }
