@@ -26,11 +26,11 @@ nav{
     padding: 10px 0px
 }
 
-.nav-logo *{
+.logo *{
     cursor: pointer;
 }
 
-.nav-logo{
+.logo{
     display: flex;
     align-items: baseline;
     width: fit-content;
@@ -47,7 +47,7 @@ nav{
     margin-right: 20px;
 }
 
-.nav-logo h3{
+.logo h3{
     font-family: 'Lobster Two', cursive;
     font-size: 39px;
     margin: 0px;
