@@ -1,0 +1,29 @@
+.clients{
+    display: flex;
+    background-color: #fcfcfc;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.clients h1{
+    font-size: 40px;
+    color: #dadada;
+    font-weight: 900;
+}
+
+.clients h1:nth-child(1){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clients h1:nth-child(2){
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.clients h1:nth-child(3){
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.clients h1:nth-child(4){
+    font-family: cursive;
+}
